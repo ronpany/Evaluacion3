@@ -131,8 +131,24 @@ public class FXMLDocumentController implements Initializable {
     // --------------------------------------- CREACION DE PEDIDOS ----------------------------------------
     public void cargarPlatosP(){
         
+        Lst_Entrada.getItems().clear();
         PlatosEntrada.forEach((p) -> {
             Lst_Entrada.getItems().add(new MenuItem(p.getName()+"; $"+p.getPrice()));
+        });
+        
+        Lst_PlatoFuerte.getItems().clear();
+        PlatosFuerte.forEach((pf)->{
+        Lst_PlatoFuerte.getItems().add(new MenuItem(pf.getName()+"; $"+pf.getPrice()));
+        });
+        
+        Lst_Postre.getItems().clear();
+        Postres.forEach((pp) -> {
+        Lst_Postre.getItems().add(new MenuItem(pp.getName()+"; $"+pp.getPrice()));
+        });
+        
+        Lst_Bebida.getItems().clear();
+        Bebidas.forEach((pb) -> {
+        Lst_Bebida.getItems().add(new MenuItem(pb.getName()+"; $"+pb.getPrice()));
         });
         
         
@@ -140,7 +156,10 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+    Lst_Entrada.setText("Ninguna");
+    Lst_Bebida.setText("Ninguna");
+    Lst_PlatoFuerte.setText("Ninguna");
+    Lst_Postre.setText("Ninguna");
     Btn_CrearPlato.setOnAction((event) -> {
         String category="";
         if(validarDatosCP()){
@@ -174,15 +193,18 @@ public class FXMLDocumentController implements Initializable {
         }else{JOptionPane.showMessageDialog(null, "Ingrese SOLO numeros en el PRECIO!");}
         }else{JOptionPane.showMessageDialog(null, "Ingrese los Datos!");
               Txt_Nombre.requestFocus();}
-                cargarPlatosP();
-
+        cargarPlatosP();
     });
+    
     Lst_Entrada.setOnAction((event) -> {
-
-        Lst_Entrada.getItems().get(2).setOnAction((ev) -> {
-        Lst_Entrada.setText(Lst_Bebida.getItems().get(0).getText());
+        Lst_Entrada.getItems().get(1).setOnAction((ev) -> {
+            System.out.println("SISA");
+        //Lst_Entrada.setText(Lst_Entrada.getItems().get(0).getText());
+        
         });
     });
-    }    
     
+    
+    
+    } 
 }

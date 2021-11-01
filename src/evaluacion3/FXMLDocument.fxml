@@ -50,27 +50,20 @@
                         <Label layoutX="342.0" layoutY="47.0" text="Postre" />
                         <Label layoutX="495.0" layoutY="47.0" text="Bebida" />
                         <MenuButton fx:id="Lst_Entrada" layoutX="46.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Action 1" />
-                            <MenuItem mnemonicParsing="false" text="Action 2" />
-                          </items>
                         </MenuButton>
                         <MenuButton fx:id="Lst_PlatoFuerte" layoutX="195.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
+
                            </items>
                         </MenuButton>
                         <MenuButton fx:id="Lst_Postre" layoutX="342.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
+
                            </items>
                         </MenuButton>
                         <MenuButton fx:id="Lst_Bebida" layoutX="495.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
+
                            </items>
                         </MenuButton>
                         <Label layoutX="45.0" layoutY="126.0" text="Cantidad" />
