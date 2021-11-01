@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evaluacion3.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="424.0" prefWidth="664.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Creación de Platos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="395.0" prefWidth="609.0">
+                     <children>
+                        <Label layoutX="42.0" layoutY="36.0" text="Nombre: " />
+                        <Label layoutX="42.0" layoutY="82.0" text="Precio $" />
+                        <TextField fx:id="Txt_Nombre" layoutX="108.0" layoutY="32.0" prefHeight="25.0" prefWidth="186.0" />
+                        <TextField fx:id="Txt_Precio" layoutX="108.0" layoutY="78.0" prefHeight="25.0" prefWidth="185.0" />
+                        <Label layoutX="327.0" layoutY="36.0" text="Tipo de Plato" />
+                        <Button fx:id="Btn_CrearPlato" layoutX="108.0" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" text="Crear Plato" />
+                        <Label layoutX="108.0" layoutY="189.0" text="Platos Existentes:" />
+                        <ListView fx:id="List_Platos" layoutX="108.0" layoutY="215.0" prefHeight="162.0" prefWidth="322.0" />
+                        <RadioButton fx:id="Rbtn_Entrada" layoutX="332.0" layoutY="82.0" mnemonicParsing="false" selected="true" text="Entrada">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="TipoPlato" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="Rbtn_Postre" layoutX="512.0" layoutY="82.0" mnemonicParsing="false" text="Postre" toggleGroup="$TipoPlato" />
+                        <RadioButton fx:id="Rbtn_PlatoFuerte" layoutX="412.0" layoutY="82.0" mnemonicParsing="false" text="Plato Fuerte" toggleGroup="$TipoPlato" />
+                        <RadioButton fx:id="Rbtn_Bebida" layoutX="581.0" layoutY="82.0" mnemonicParsing="false" text="Bebida" toggleGroup="$TipoPlato" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Pedido">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="585.0">
+                     <children>
+                        <Label layoutX="45.0" layoutY="47.0" text="Entrada:" />
+                        <Label layoutX="195.0" layoutY="47.0" text="Plato Fuerte" />
+                        <Label layoutX="342.0" layoutY="47.0" text="Postre" />
+                        <Label layoutX="495.0" layoutY="47.0" text="Bebida" />
+                        <MenuButton fx:id="Lst_Entrada" layoutX="46.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                        <MenuButton fx:id="Lst_PlatoFuerte" layoutX="195.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                        <MenuButton fx:id="Lst_Postre" layoutX="342.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                        <MenuButton fx:id="Lst_Bebida" layoutX="495.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                        <Label layoutX="45.0" layoutY="126.0" text="Cantidad" />
+                        <TextField fx:id="Txt_CantidadEntrada" layoutX="98.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
+                        <Label layoutX="195.0" layoutY="127.0" text="Cantidad" />
+                        <TextField fx:id="Txt_CantidadPlatoFuerte" layoutX="248.0" layoutY="122.0" prefHeight="25.0" prefWidth="56.0" />
+                        <Label layoutX="342.0" layoutY="126.0" text="Cantidad" />
+                        <TextField fx:id="Txt_CantidadPostre" layoutX="395.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
+                        <Label layoutX="495.0" layoutY="128.0" text="Cantidad" />
+                        <TextField fx:id="Txt_CantidadBebida" layoutX="548.0" layoutY="123.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextArea fx:id="TxtArea_Factura" layoutX="43.0" layoutY="214.0" prefHeight="156.0" prefWidth="568.0" />
+                        <CheckBox fx:id="Check_ClienteFiel" layoutX="45.0" layoutY="177.0" mnemonicParsing="false" text="Cliente Fiel" />
+                        <Button fx:id="Btn_FacturaPedido" layoutX="196.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Factura Pedido" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
