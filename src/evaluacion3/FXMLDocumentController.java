@@ -160,8 +160,10 @@ public class FXMLDocumentController implements Initializable {
     Lst_Bebida.setText("Ninguna");
     Lst_PlatoFuerte.setText("Ninguna");
     Lst_Postre.setText("Ninguna");
-    Btn_CrearPlato.setOnAction((event) -> {
-        String category="";
+    
+        try {
+        Btn_CrearPlato.setOnAction((event) -> {    
+            String category="";
         if(validarDatosCP()){
             if(Txt_Precio.getText().matches("[0-9.]+")){
             if(Rbtn_Entrada.isSelected()){
@@ -195,6 +197,10 @@ public class FXMLDocumentController implements Initializable {
               Txt_Nombre.requestFocus();}
         cargarPlatosP();
     });
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        
     
     Lst_Entrada.setOnAction((event) -> {
         Lst_Entrada.getItems().get(1).setOnAction((ev) -> {
