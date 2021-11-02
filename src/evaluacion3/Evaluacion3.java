@@ -9,6 +9,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -20,7 +21,8 @@ public class Evaluacion3 extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+        stage.setTitle("Tienda Pastusan! :v");
+        stage.getIcons().add(new Image("evaluacion3/icon.png"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
