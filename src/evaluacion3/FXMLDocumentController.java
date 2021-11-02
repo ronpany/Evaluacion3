@@ -160,6 +160,8 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+    Btn_CrearPlato.getStyleClass().add("redbutton");
+    Btn_FacturaPedido.getStyleClass().add("bluebutton");
     Txt_CantidadEntrada.setText("0");
     Txt_CantidadPlatoFuerte.setText("0");
     Txt_CantidadPostre.setText("0");
@@ -310,6 +312,7 @@ public class FXMLDocumentController implements Initializable {
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Debe Ingresar Solo NUMEROS en las Cantidades!");
         }
+        
 
        
        

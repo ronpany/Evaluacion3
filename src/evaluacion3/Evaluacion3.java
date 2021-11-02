@@ -24,7 +24,8 @@ public class Evaluacion3 extends Application {
         stage.setTitle("Tienda Pastusan! :v");
         stage.getIcons().add(new Image("evaluacion3/icon.png"));
         Scene scene = new Scene(root);
-        
+        String css = this.getClass().getResource("style.css").toExternalForm();
+        scene.getStylesheets().add(css);
         stage.setScene(scene);
         stage.show();
     }

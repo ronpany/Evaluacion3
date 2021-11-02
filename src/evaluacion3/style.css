@@ -1,0 +1,43 @@
+
+/* 
+    Created on : 2/11/2021, 10:41:48 AM
+    Author     : RONNY PANTOJA
+*/
+/*
+Estilos Generales.
+*/
+.root{
+    -fx-background-image: url("/evaluacion3/fondo.jpg");
+}
+.label{
+    -fx-font-size:13;
+    -fx-font-family:"Lucida Console"; 
+    
+}
+.button{
+    -fx-pref-width:110px;
+    -fx-pref-height:30px;
+}
+/*
+Estilos Particulares.
+*/
+
+.redbutton{
+    -fx-background-color: rgb(231, 88, 125 );
+}
+.redbutton:hover{
+    -fx-background-color: rgb(168, 254, 170 );
+}
+
+.bluebutton{
+    -fx-background-color: rgb(88, 231, 225 );
+}
+.bluebutton:hover{
+    -fx-background-color: rgb(235, 161, 234   );
+}
+/*
+Estilos Privados.
+*/
+#TxtArea_Factura{
+    -fx-background-color: rgb(214, 243, 240 );
+}

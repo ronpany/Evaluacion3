@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -67,13 +66,13 @@
                            </items>
                         </MenuButton>
                         <Label layoutX="45.0" layoutY="126.0" text="Cantidad" />
-                        <TextField fx:id="Txt_CantidadEntrada" layoutX="98.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextField fx:id="Txt_CantidadEntrada" layoutX="112.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
                         <Label layoutX="195.0" layoutY="127.0" text="Cantidad" />
-                        <TextField fx:id="Txt_CantidadPlatoFuerte" layoutX="248.0" layoutY="122.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextField fx:id="Txt_CantidadPlatoFuerte" layoutX="262.0" layoutY="122.0" prefHeight="25.0" prefWidth="56.0" />
                         <Label layoutX="342.0" layoutY="126.0" text="Cantidad" />
-                        <TextField fx:id="Txt_CantidadPostre" layoutX="395.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextField fx:id="Txt_CantidadPostre" layoutX="410.0" layoutY="121.0" prefHeight="25.0" prefWidth="56.0" />
                         <Label layoutX="495.0" layoutY="128.0" text="Cantidad" />
-                        <TextField fx:id="Txt_CantidadBebida" layoutX="548.0" layoutY="123.0" prefHeight="25.0" prefWidth="56.0" />
+                        <TextField fx:id="Txt_CantidadBebida" layoutX="560.0" layoutY="123.0" prefHeight="25.0" prefWidth="56.0" />
                         <TextArea fx:id="TxtArea_Factura" layoutX="43.0" layoutY="214.0" prefHeight="156.0" prefWidth="568.0" />
                         <CheckBox fx:id="Check_ClienteFiel" layoutX="45.0" layoutY="177.0" mnemonicParsing="false" text="Cliente Fiel" />
                         <Button fx:id="Btn_FacturaPedido" layoutX="196.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Factura Pedido" />
