@@ -17,6 +17,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuButton;
@@ -33,7 +34,9 @@ import javax.swing.JOptionPane;
  * @author RONNY PANTOJA
  */
 public class FXMLDocumentController implements Initializable {
-    
+    @FXML
+    private Label LblPlatosExistentes;
+
     @FXML
     private Button Btn_CrearPlato;
 

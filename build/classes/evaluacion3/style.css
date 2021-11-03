@@ -1,10 +1,19 @@
 
-/* 
-    Created on : 2/11/2021, 10:41:48 AM
-    Author     : RONNY PANTOJA
+/*
+Selectores de ID. ------------------------------------------------------------
 */
 /*
-Estilos Generales.
+Aqui modificamos el color de fondo del Label "Platos Existentes"
+*/
+#LblPlatosExistentes{
+    -fx-background-color: red;
+}
+
+#Btn_CrearPlato{
+    -fx-background-color: rgb(106, 157, 187 );
+}
+/*
+Selectores de CLASE -------------------------------------------------------
 */
 .root{
     -fx-background-image: url("/evaluacion3/fondo.jpg");
@@ -18,9 +27,6 @@ Estilos Generales.
     -fx-pref-width:110px;
     -fx-pref-height:30px;
 }
-/*
-Estilos Particulares.
-*/
 
 .redbutton{
     -fx-background-color: rgb(231, 88, 125 );
@@ -35,9 +41,12 @@ Estilos Particulares.
 .bluebutton:hover{
     -fx-background-color: rgb(235, 161, 234   );
 }
+Selectores de tipo
+
+
 /*
-Estilos Privados.
+Selectores de TIPO.
 */
-#TxtArea_Factura{
-    -fx-background-color: rgb(214, 243, 240 );
+MenuButton{
+    -fx-background-color: rgb(228, 240, 128);
 }
